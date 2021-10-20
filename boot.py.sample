@@ -1,0 +1,18 @@
+import machine
+import micropython
+import esp
+esp.osdebug(None)
+import gc
+gc.collect()
+
+esp.osdebug(None)
+
+dev_name = '<device_name>'
+ssid = '<ssid>'
+password = '<wifi_password>'
+
+mqtt_server = '<mqtt_server>'
+mqtt_user = '<mqtt_user>'
+mqtt_password = '<mqtt_password>'
+ntp_server = '<ntp_server>'
+hour_adjust = <ntp_offset>  # GMT offset (integer, accepts negative values)
